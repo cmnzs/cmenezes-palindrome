@@ -10,6 +10,6 @@ class String
   private
 
   def processed_content
-    self.to_s.downcase
+    self.to_s.downcase.gsub(/[^\w+]/, "")
   end
 end

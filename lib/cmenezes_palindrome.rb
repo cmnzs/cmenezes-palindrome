@@ -4,7 +4,7 @@ require_relative "cmenezes_palindrome/version"
 
 module CmenezesPalindrome
   def palindrome?
-    processed_content == processed_content.reverse
+    processed_content == processed_content.reverse && !processed_content.empty?
   end
 
   private

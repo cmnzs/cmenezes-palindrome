@@ -3,6 +3,14 @@
 require "test_helper"
 
 class TestCmenezesPalindrome < Minitest::Test
+  def test_empty_string
+    refute "".palindrome?
+  end
+
+  def test_whitespace_string
+    refute "  ".palindrome?
+  end
+
   def test_non_palindrome
     refute "apple".palindrome?
   end
